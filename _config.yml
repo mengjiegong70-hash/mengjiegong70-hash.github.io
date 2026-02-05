@@ -23,13 +23,13 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "my photo.jpg"
+  avatar           : "my photo.png"
   name             : "Mengjie Gong"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
   location         : "China"
   employer         : "Red Brick University"
-  uri              : # URL
+  uri              : mengjiegong70-hash.github.io # URL
   email            : "gongmj@mail2.sysu.edu.cn" 
 
   # Academic websites
