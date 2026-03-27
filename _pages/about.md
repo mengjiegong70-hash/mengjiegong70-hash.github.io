@@ -1,15 +1,16 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
-
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+I am a master’s student in Geographic Information Systems (GIS) at Sun Yat-Sen University. My research focuses on **Spatial Accessibility Modeling**, **Causal Inference**, and **Environmental Health Exposure Analysis**:
+- **Spatial Accessibility Modeling**:Developing novel computational methods and tools for quantifying spatial accessibility, with applications spanning healthcare facilities, grocery stores, and urban green spaces, as well as accessibility dynamics under extreme weather events.
+- **Causal Inference**:Developing novel causal inference methods tailored for spatial data, with broad applications in urban and environmental contexts.
+- **Environmental Health Exposure Analysis**:Developing dynamic trajectory-based exposure assessment methods, with applications in sentiment exposure, thermal exposure, street-level built environment exposure, and noise exposure.
 
 A data-driven personal website
 ======
