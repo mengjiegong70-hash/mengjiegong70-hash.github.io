@@ -2,7 +2,7 @@
 title: "Spatio-temporal dynamics and recovery of commuting activities via bike-sharing around COVID-19: A case study of New York"
 collection: publications
 category: manuscripts
-permalink: /publication/bikesharing-covid-nyc
+permalink: /publication/[2024-10]Spatio-temporal dynamics and recovery of commuting activities via__bike-sharing around COVID-19.pdf
 date: 2024/12/1
 venue: "Journal of Transport Geography"
 paperurl: "https://doi.org/10.1016/j.jtrangeo.2024.104031"
