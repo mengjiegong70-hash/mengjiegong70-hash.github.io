@@ -1,5 +1,5 @@
 ---
-title: "The cost-balanced accessibility (CBA) model: a new framework for measuring urban accessibility with multi-objective considerations."
+title: "The cost-balanced accessibility (CBA) model: a new framework for measuring urban accessibility with multi-objective considerations"
 collection: publications
 category: manuscripts
 date: 2025-9-15
