@@ -4,6 +4,7 @@ collection: publications
 category: manuscripts
 date: 2025-12-10
 order: 2
+category: lead_authored
 venue: 'Urban Informatics'
 slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
 paperurl: 'https://mengjiegong70-hash.github.io/files/[2025-12]How does the urban environment shape noise perception.pdf'
