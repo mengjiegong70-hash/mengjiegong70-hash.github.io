@@ -1,10 +1,9 @@
 ---
 title: "How does the urban environment shape noise perception? Evidence from a longitudinal study in New York City"
 collection: publications
-category: manuscripts
+category: lead_authored
 date: 2025-12-10
 order: 2
-category: lead_authored
 venue: 'Urban Informatics'
 slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
 paperurl: 'https://mengjiegong70-hash.github.io/files/[2025-12]How does the urban environment shape noise perception.pdf'
