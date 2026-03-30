@@ -3,8 +3,8 @@ title: "Spatio-temporal dynamics and recovery of commuting activities via bike-s
 collection: publications
 category: manuscripts
 permalink: /publication/[2024-10]Spatio-temporal dynamics and recovery of commuting activities via__bike-sharing around COVID-19.pdf
-date: 2024/12/1
-venue: "Journal of Transport Geography"
-paperurl: "https://doi.org/10.1016/j.jtrangeo.2024.104031"
+date: 2024-12-1
+journal: "Journal of Transport Geography"
+paperurl: 'https://academicpages.github.io/files/[2025-12]How does the urban environment shape noise perception.pdf'
 citation: "<strong>Gong, M.</strong>, Xin, R., Yang, J., Wang, J., Li, T., & Zhang, Y. (2024). Spatio-temporal dynamics and recovery of commuting activities via bike-sharing around COVID-19: A case study of New York. Journal of Transport Geography, 121, 104031."
 ---
