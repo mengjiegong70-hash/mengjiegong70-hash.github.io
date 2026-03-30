@@ -3,7 +3,7 @@ title: "How does the urban environment shape noise perception? Evidence from a l
 collection: publications
 category: manuscripts
 permalink: /publication/noise-perception-nyc
-date: 2010-10-01
+date: 2025-12-10
 journal: 'Urban Informatics'
 slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
 paperurl: 'https://academicpages.github.io/files/[2025-12]How does the urban environment shape noise perception.pdf'
