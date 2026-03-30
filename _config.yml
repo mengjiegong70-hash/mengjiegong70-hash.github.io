@@ -84,13 +84,13 @@ author:
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
   lead_authored:
-    title: Lead-authored Publications
-  co_author:
-    title: Co-authored Publications
+    title: "Lead-authored Publications"
+  co_authored:
+    title: "Co-authored Publications"
   under_review:
-    title: Under Review
+    title: "Under Review"
   in_preparation:
-    title: In Preparation
+    title: "In Preparation"
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
