@@ -7,5 +7,4 @@ order: 9
 venue: "Under review at Sustainable Development (Q1, IF=8.2)"
 ---
 
-<strong>Gong, M.</strong>, Chen, P., Pan, J., et al.  Toward Sustainable Urban Governance: Measuring Economic Vitality via Mobility and Place-Based Commercial Ratings.  
-[[Paper Overview]](https://academicpages.github.io/files/slides2.pdf)
+<strong>Gong, M.</strong>, Chen, P., Pan, J., et al.  Toward Sustainable Urban Governance: Measuring Economic Vitality via Mobility and Place-Based Commercial Ratings.  [[Paper Overview]](https://academicpages.github.io/files/slides2.pdf)
