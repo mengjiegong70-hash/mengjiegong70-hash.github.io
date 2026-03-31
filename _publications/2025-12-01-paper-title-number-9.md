@@ -2,7 +2,7 @@
 title: "Toward Sustainable Urban Governance: Measuring Economic Vitality via Mobility and Place-Based Commercial Ratings"
 collection: publications
 category: under_review
-date: 2026
+date: 2026-01-01
 order: 9
 venue: "Under review at Sustainable Development (Q1, IF=8.2)"
 ---
