@@ -1,12 +1,104 @@
 ---
 layout: archive
-title: "Teaching"
+title: "Education and Research Experience"
 permalink: /teaching/
 author_profile: true
 ---
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<style>
+.exp-card {
+  background: #ffffff;
+  border-left: 5px solid #4a90e2;
+  padding: 18px 22px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.exp-card h3 {
+  margin-top: 0;
+  margin-bottom: 6px;
+  color: #2c3e50;
+}
+
+.exp-meta {
+  color: #666;
+  font-size: 0.95em;
+  margin-bottom: 10px;
+}
+
+.exp-tag {
+  display: inline-block;
+  background: #eef5ff;
+  color: #2c6fb7;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  margin-bottom: 10px;
+}
+
+.exp-card ul {
+  margin-top: 8px;
+}
+
+.section-title {
+  margin-top: 35px;
+  border-bottom: 2px solid #e6e6e6;
+  padding-bottom: 8px;
+}
+</style>
+
+<h2 class="section-title">🎓 Education</h2>
+
+<div class="exp-card">
+  <span class="exp-tag">Master's Degree</span>
+  <h3>Sun Yat-sen University</h3>
+  <div class="exp-meta"><em>M.Eng. in Surveying and Mapping Engineering</em> · Sept. 2024 – Present</div>
+  <ul>
+    <li>Average Mark: <strong>90.3/100</strong></li>
+  </ul>
+</div>
+
+<div class="exp-card">
+  <span class="exp-tag">Bachelor's Degree</span>
+  <h3>Shandong University of Science and Technology</h3>
+  <div class="exp-meta"><em>B.Eng. in Surveying and Mapping Engineering & B.A. in English</em> · Sept. 2020 – June 2024</div>
+  <ul>
+    <li>Ranked <strong>1st</strong> based on comprehensive evaluation</li>
+    <li>Average Mark: <strong>88.3/100</strong></li>
+  </ul>
+</div>
+
+<h2 class="section-title">🔬 Research Experience</h2>
+
+<div class="exp-card">
+  <span class="exp-tag">Current Research</span>
+  <h3>Sun Yat-sen University</h3>
+  <div class="exp-meta">Research Advisor: <strong>Prof. Pengfei Chen</strong>, Associate Professor · Sept. 2024 – Present</div>
+  <ul>
+    <li><strong>Research focus:</strong> Spatial accessibility modeling, causal inference, and environmental health exposure analysis</li>
+    <li><strong>Projects:</strong>
+      <ul>
+        <li>General Program of Guangdong Natural Science Foundation: Spatiotemporal evolution and resource optimization of elderly care service accessibility under different socio-economic development pathways in the Guangdong-Hong Kong-Macao Greater Bay Area</li>
+        <li>SYSU Medical-Engineering Integration Seed Fund: Urban eye-health environmental exposure assessment and intervention mechanisms integrating remote sensing and GIS</li>
+        <li>Industry Project: Multi-scale residential unit segmentation using urban big data</li>
+        <li>Industry Project: Urban eye-health risk indicator computation and street-view visualization mapping</li>
+      </ul>
+    </li>
+    <li>Reviewer for journals including <em>EPJ Data Science</em> (Q1) and <em>Humanities & Social Sciences Communications</em> (Q1)</li>
+  </ul>
+</div>
+
+<div class="exp-card">
+  <span class="exp-tag">Undergraduate Research</span>
+  <h3>Shandong University of Science and Technology</h3>
+  <div class="exp-meta">Undergraduate Advisor: <strong>Prof. Rui Xin</strong>, Associate Professor · Sept. 2020 – June 2024</div>
+  <ul>
+    <li><strong>Research focus:</strong> Trajectory mining and human mobility analysis</li>
+    <li><strong>National Undergraduate Innovation Program</strong>, Principal Investigator</li>
+    <li>Project: Story map design and novel cartography based on narrative visualization and metaphorical thinking</li>
+    <li>Rated <strong>Excellent Completion</strong></li>
+  </ul>
+</div>
