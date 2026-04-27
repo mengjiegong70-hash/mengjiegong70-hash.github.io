@@ -6,54 +6,47 @@ author_profile: true
 ---
 
 <style>
-    /* 局部样式，仅作用于此页面 */
-    .res-container {
-        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        color: #2c3e50;
-        line-height: 1.6;
-    }
-    .res-section { margin-bottom: 35px; }
-    .res-h2 {
-        font-size: 1.3rem;
-        color: #2980b9;
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-        border-bottom: 1px solid #e0e0e0;
-        padding-bottom: 8px;
+    .res-wrapper { font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; color: #333; }
+    .res-section { margin-bottom: 40px; }
+    .res-h2 { 
+        font-size: 1.5rem; 
+        color: #004c97; 
+        border-bottom: 2px solid #004c97; 
+        padding-bottom: 5px; 
         margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
     }
-    .res-entry { margin-bottom: 25px; }
-    .res-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        flex-wrap: wrap;
-    }
-    .res-inst { font-size: 1.1rem; font-weight: 700; color: #1a2a3a; }
-    .res-date { font-size: 0.9rem; font-weight: 600; color: #576574; }
-    .res-degree { font-weight: 600; color: #2980b9; font-style: italic; margin: 5px 0; }
-    .res-ul { list-style: none; padding-left: 5px; margin-top: 10px; }
-    .res-li { position: relative; padding-left: 20px; margin-bottom: 6px; font-size: 0.95rem; }
-    .res-li::before { content: "▹"; position: absolute; left: 0; color: #2980b9; }
+    .res-entry { margin-bottom: 30px; }
+    .res-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+    .res-inst { font-size: 1.2rem; font-weight: 700; color: #111; }
+    .res-date { font-size: 0.95rem; font-weight: 600; color: #666; }
+    .res-degree { font-weight: 600; color: #0071bc; font-style: italic; margin-top: 4px; }
+    .res-ul { list-style: none; padding-left: 5px; margin-top: 12px; }
+    .res-li { position: relative; padding-left: 22px; margin-bottom: 8px; font-size: 0.98rem; }
+    .res-li::before { content: "▪"; position: absolute; left: 0; color: #0071bc; font-size: 12px; top: 4px; }
     .res-pill {
-        display: inline-block;
-        background: #f1f8ff;
-        border: 1px solid #c8e1ff;
-        color: #0366d6;
-        padding: 0px 8px;
-        border-radius: 12px;
+        background: #f0f7ff;
+        border: 1px solid #d0e3ff;
+        color: #0056b3;
+        padding: 1px 8px;
+        border-radius: 4px;
         font-size: 0.85rem;
+        font-weight: 600;
     }
-    .res-reviewer {
+    .res-sub-ul { list-style: circle; padding-left: 20px; margin: 8px 0; color: #555; font-size: 0.92rem; }
+    .res-sub-ul li { margin-bottom: 5px; }
+    .res-highlight-box {
         margin-top: 15px;
-        padding: 12px;
-        background: #fcfcfc;
-        border-left: 3px solid #1a2a3a;
-        font-size: 0.9rem;
+        padding: 15px;
+        background-color: #f8f9fa;
+        border-left: 4px solid #004c97;
+        font-size: 0.95rem;
     }
+    b { color: #000; }
 </style>
 
-<div class="res-container">
+<div class="res-wrapper">
 
     <div class="res-section">
         <h2 class="res-h2">Education</h2>
@@ -65,7 +58,7 @@ author_profile: true
             </div>
             <div class="res-degree">M.Eng. in Surveying and Mapping Engineering</div>
             <ul class="res-ul">
-                <li class="res-li">Average Mark: <span class="res-pill">90.3 / 100</span></li>
+                <li class="res-li"><b>Academic Performance:</b> Average Mark <span class="res-pill">90.3 / 100</span></li>
             </ul>
         </div>
 
@@ -74,10 +67,10 @@ author_profile: true
                 <span class="res-inst">Shandong University of Science and Technology</span>
                 <span class="res-date">Sept. 2020 – June 2024</span>
             </div>
-            <div class="res-degree">B.Eng. in Surveying and Mapping & B.A. in English</div>
+            <div class="res-degree">B.Eng. in Surveying and Mapping & B.A. in English (Dual Degree)</div>
             <ul class="res-ul">
-                <li class="res-li">Ranked <strong>1st</strong> based on comprehensive evaluation</li>
-                <li class="res-li">Average Mark: <span class="res-pill">88.3 / 100</span></li>
+                <li class="res-li"><b>Ranking:</b> Ranked <span class="res-pill">1st</span> out of all students based on comprehensive evaluation.</li>
+                <li class="res-li"><b>Academic Performance:</b> Average Mark 88.3 / 100.</li>
             </ul>
         </div>
     </div>
@@ -88,33 +81,38 @@ author_profile: true
         <div class="res-entry">
             <div class="res-header">
                 <span class="res-inst">Sun Yat-sen University</span>
-                <span class="res-date">Sept. 2024 – Present</span>
+                <span class="res-date">Guangzhou, China</span>
             </div>
-            <div class="res-degree">Advisor: Prof. Pengfei Chen (Associate Professor)</div>
+            <div class="res-degree">Research Advisor: Assoc. Prof. Pengfei Chen</div>
             <ul class="res-ul">
-                <li class="res-li"><strong>Focus:</strong> Spatial accessibility modeling, causal inference, and environmental health.</li>
-                <li class="res-li"><strong>Key Projects:</strong>
-                    <ul style="list-style: circle; padding-left: 20px; color: #576574; font-size: 0.9rem;">
-                        <li>Guangdong Natural Science Foundation: Resource optimization of elderly care in GBA.</li>
-                        <li>SYSU Medical-Engineering Fund: Eye-health environmental exposure via RS/GIS.</li>
-                        <li>Industry Projects: Residential unit segmentation & street-view risk mapping.</li>
+                <li class="res-li"><b>Research Focus:</b> Spatial accessibility modeling, causal inference, and environmental health exposure analysis.</li>
+                <li class="res-li"><b>Participation in Key Projects:</b>
+                    <ul class="res-sub-ul">
+                        <li><i>General Program of Guangdong Natural Science Foundation:</i> Spatiotemporal evolution and resource optimization of elderly care service accessibility under different socio-economic development pathways in the Guangdong-Hong Kong-Macao Greater Bay Area (GBA).</li>
+                        <li><i>SYSU Medical-Engineering Integration Seed Fund:</i> Urban eye-health environmental exposure assessment and intervention mechanisms integrating remote sensing and GIS.</li>
+                        <li><i>Industry Projects:</i> Conducted multi-scale residential unit segmentation using urban big data; Developed urban eye-health risk indicator computation and street-view visualization mapping.</li>
                     </ul>
                 </li>
             </ul>
-            <div class="res-reviewer">
-                <strong>Academic Service:</strong> Reviewer for <i>EPJ Data Science (Q1)</i> and <i>H&SS Communications (Q1)</i>.
+            <div class="res-highlight-box">
+                <strong>Academic Services:</strong> Invited Peer Reviewer for high-impact journals including <i>EPJ Data Science (Nature Springer, Q1)</i> and <i>Humanities & Social Sciences Communications (Nature Portfolio, Q1)</i>.
             </div>
         </div>
 
         <div class="res-entry">
             <div class="res-header">
                 <span class="res-inst">Shandong University of Science and Technology</span>
-                <span class="res-date">Sept. 2020 – June 2024</span>
+                <span class="res-date">Qingdao, China</span>
             </div>
-            <div class="res-degree">Advisor: Prof. Rui Xin (Associate Professor)</div>
+            <div class="res-degree">Undergraduate Advisor: Assoc. Prof. Rui Xin</div>
             <ul class="res-ul">
-                <li class="res-li"><strong>Focus:</strong> Trajectory mining and human mobility analysis.</li>
-                <li class="res-li"><strong>National Undergraduate Innovation Program (PI):</strong> Story map design based on narrative visualization. Rated <b>"Excellent Completion"</b>.</li>
+                <li class="res-li"><b>Research Focus:</b> Trajectory mining and human mobility analysis.</li>
+                <li class="res-li"><b>National Undergraduate Innovation Program (Principal Investigator):</b>
+                    <ul class="res-sub-ul">
+                        <li>Led the project: <i>"Story map design and novel cartography based on narrative visualization and metaphorical thinking."</i></li>
+                        <li>Successfully completed with an <b>"Excellent Completion"</b> rating (Top tier nationwide).</li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>
