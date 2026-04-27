@@ -5,115 +5,100 @@ permalink: /teaching/
 author_profile: true
 ---
 
+{% include base_path %}
+
 <style>
-    .res-wrapper { font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif; color: #333; }
-    .res-section { margin-bottom: 40px; }
-    .res-h2 { 
-        font-size: 1.5rem; 
-        color: #004c97; 
-        border-bottom: 2px solid #004c97; 
-        padding-bottom: 5px; 
-        margin-bottom: 20px;
-        text-transform: uppercase;
-        font-weight: 700;
-    }
-    .res-entry { margin-bottom: 30px; }
-    .res-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
-    .res-inst { font-size: 1.2rem; font-weight: 700; color: #111; }
-    .res-date { font-size: 0.95rem; font-weight: 600; color: #666; }
-    .res-degree { font-weight: 600; color: #0071bc; font-style: italic; margin-top: 4px; }
-    .res-ul { list-style: none; padding-left: 5px; margin-top: 12px; }
-    .res-li { position: relative; padding-left: 22px; margin-bottom: 8px; font-size: 0.98rem; }
-    .res-li::before { content: "▪"; position: absolute; left: 0; color: #0071bc; font-size: 12px; top: 4px; }
-    .res-pill {
-        background: #f0f7ff;
-        border: 1px solid #d0e3ff;
-        color: #0056b3;
-        padding: 1px 8px;
-        border-radius: 4px;
-        font-size: 0.85rem;
-        font-weight: 600;
-    }
-    .res-sub-ul { list-style: circle; padding-left: 20px; margin: 8px 0; color: #555; font-size: 0.92rem; }
-    .res-sub-ul li { margin-bottom: 5px; }
-    .res-highlight-box {
-        margin-top: 15px;
-        padding: 15px;
-        background-color: #f8f9fa;
-        border-left: 4px solid #004c97;
-        font-size: 0.95rem;
-    }
-    b { color: #000; }
+.exp-card {
+  background: #ffffff;
+  border-left: 5px solid #4a90e2;
+  padding: 18px 22px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.exp-card h3 {
+  margin-top: 0;
+  margin-bottom: 6px;
+  color: #2c3e50;
+}
+
+.exp-meta {
+  color: #666;
+  font-size: 0.95em;
+  margin-bottom: 10px;
+}
+
+.exp-tag {
+  display: inline-block;
+  background: #eef5ff;
+  color: #2c6fb7;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  margin-bottom: 10px;
+}
+
+.exp-card ul {
+  margin-top: 8px;
+}
+
+.section-title {
+  margin-top: 35px;
+  border-bottom: 2px solid #e6e6e6;
+  padding-bottom: 8px;
+}
 </style>
 
-<div class="res-wrapper">
+<h2 class="section-title">🎓 Education</h2>
 
-    <div class="res-section">
-        <h2 class="res-h2">Education</h2>
-        
-        <div class="res-entry">
-            <div class="res-header">
-                <span class="res-inst">Sun Yat-sen University</span>
-                <span class="res-date">Sept. 2024 – Present</span>
-            </div>
-            <div class="res-degree">M.Eng. in Surveying and Mapping Engineering</div>
-            <ul class="res-ul">
-                <li class="res-li"><b>Academic Performance:</b> Average Mark <span class="res-pill">90.3 / 100</span></li>
-            </ul>
-        </div>
+<div class="exp-card">
+  <span class="exp-tag">Master's Degree</span>
+  <h3>Sun Yat-sen University</h3>
+  <div class="exp-meta"><em>M.Eng. in Surveying and Mapping Engineering</em> · Sept. 2024 – Present</div>
+  <ul>
+    <li>Average Mark: <strong>90.3/100</strong></li>
+  </ul>
+</div>
 
-        <div class="res-entry">
-            <div class="res-header">
-                <span class="res-inst">Shandong University of Science and Technology</span>
-                <span class="res-date">Sept. 2020 – June 2024</span>
-            </div>
-            <div class="res-degree">B.Eng. in Surveying and Mapping & B.A. in English (Dual Degree)</div>
-            <ul class="res-ul">
-                <li class="res-li"><b>Ranking:</b> Ranked <span class="res-pill">1st</span> out of all students based on comprehensive evaluation.</li>
-                <li class="res-li"><b>Academic Performance:</b> Average Mark 88.3 / 100.</li>
-            </ul>
-        </div>
-    </div>
+<div class="exp-card">
+  <span class="exp-tag">Bachelor's Degree</span>
+  <h3>Shandong University of Science and Technology</h3>
+  <div class="exp-meta"><em>B.Eng. in Surveying and Mapping Engineering & B.A. in English</em> · Sept. 2020 – June 2024</div>
+  <ul>
+    <li>Ranked <strong>1st</strong> based on comprehensive evaluation</li>
+    <li>Average Mark: <strong>88.3/100</strong></li>
+  </ul>
+</div>
 
-    <div class="res-section">
-        <h2 class="res-h2">Research Experience</h2>
+<h2 class="section-title">🔬 Research Experience</h2>
 
-        <div class="res-entry">
-            <div class="res-header">
-                <span class="res-inst">Sun Yat-sen University</span>
-                <span class="res-date">Guangzhou, China</span>
-            </div>
-            <div class="res-degree">Research Advisor: Assoc. Prof. Pengfei Chen</div>
-            <ul class="res-ul">
-                <li class="res-li"><b>Research Focus:</b> Spatial accessibility modeling, causal inference, and environmental health exposure analysis.</li>
-                <li class="res-li"><b>Participation in Key Projects:</b>
-                    <ul class="res-sub-ul">
-                        <li><i>General Program of Guangdong Natural Science Foundation:</i> Spatiotemporal evolution and resource optimization of elderly care service accessibility under different socio-economic development pathways in the Guangdong-Hong Kong-Macao Greater Bay Area (GBA).</li>
-                        <li><i>SYSU Medical-Engineering Integration Seed Fund:</i> Urban eye-health environmental exposure assessment and intervention mechanisms integrating remote sensing and GIS.</li>
-                        <li><i>Industry Projects:</i> Conducted multi-scale residential unit segmentation using urban big data; Developed urban eye-health risk indicator computation and street-view visualization mapping.</li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="res-highlight-box">
-                <strong>Academic Services:</strong> Invited Peer Reviewer for high-impact journals including <i>EPJ Data Science (Nature Springer, Q1)</i> and <i>Humanities & Social Sciences Communications (Nature Portfolio, Q1)</i>.
-            </div>
-        </div>
+<div class="exp-card">
+  <span class="exp-tag">Current Research</span>
+  <h3>Sun Yat-sen University</h3>
+  <div class="exp-meta">Research Advisor: <strong>Prof. Pengfei Chen</strong>, Associate Professor · Sept. 2024 – Present</div>
+  <ul>
+    <li><strong>Research focus:</strong> Spatial accessibility modeling, causal inference, and environmental health exposure analysis</li>
+    <li><strong>Projects:</strong>
+      <ul>
+        <li>General Program of Guangdong Natural Science Foundation: Spatiotemporal evolution and resource optimization of elderly care service accessibility under different socio-economic development pathways in the Guangdong-Hong Kong-Macao Greater Bay Area</li>
+        <li>SYSU Medical-Engineering Integration Seed Fund: Urban eye-health environmental exposure assessment and intervention mechanisms integrating remote sensing and GIS</li>
+        <li>Industry Project: Multi-scale residential unit segmentation using urban big data</li>
+        <li>Industry Project: Urban eye-health risk indicator computation and street-view visualization mapping</li>
+      </ul>
+    </li>
+    <li>Reviewer for journals including <em>EPJ Data Science</em> (Q1) and <em>Humanities & Social Sciences Communications</em> (Q1)</li>
+  </ul>
+</div>
 
-        <div class="res-entry">
-            <div class="res-header">
-                <span class="res-inst">Shandong University of Science and Technology</span>
-                <span class="res-date">Qingdao, China</span>
-            </div>
-            <div class="res-degree">Undergraduate Advisor: Assoc. Prof. Rui Xin</div>
-            <ul class="res-ul">
-                <li class="res-li"><b>Research Focus:</b> Trajectory mining and human mobility analysis.</li>
-                <li class="res-li"><b>National Undergraduate Innovation Program (Principal Investigator):</b>
-                    <ul class="res-sub-ul">
-                        <li>Led the project: <i>"Story map design and novel cartography based on narrative visualization and metaphorical thinking."</i></li>
-                        <li>Successfully completed with an <b>"Excellent Completion"</b> rating (Top tier nationwide).</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
+<div class="exp-card">
+  <span class="exp-tag">Undergraduate Research</span>
+  <h3>Shandong University of Science and Technology</h3>
+  <div class="exp-meta">Undergraduate Advisor: <strong>Prof. Rui Xin</strong>, Associate Professor · Sept. 2020 – June 2024</div>
+  <ul>
+    <li><strong>Research focus:</strong> Trajectory mining and human mobility analysis</li>
+    <li><strong>National Undergraduate Innovation Program</strong>, Principal Investigator</li>
+    <li>Project: Story map design and novel cartography based on narrative visualization and metaphorical thinking</li>
+    <li>Rated <strong>Excellent Completion</strong></li>
+  </ul>
 </div>
