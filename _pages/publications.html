@@ -5,33 +5,162 @@ permalink: /publications/
 author_profile: true
 ---
 
+{% include base_path %}
+
+<style>
+.pub-card {
+  display: flex;
+  gap: 22px;
+  padding: 22px;
+  margin-bottom: 28px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+  border: 1px solid #eee;
+}
+
+.pub-img {
+  flex: 0 0 220px;
+}
+
+.pub-img img {
+  width: 220px;
+  height: 145px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.pub-content {
+  flex: 1;
+}
+
+.pub-title {
+  font-size: 1.15em;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+
+.pub-venue {
+  color: #2563eb;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.pub-authors {
+  color: #444;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.pub-abstract {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.pub-links a {
+  display: inline-block;
+  margin-right: 8px;
+  margin-top: 6px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: #f1f5f9;
+  color: #1e40af;
+  text-decoration: none;
+  font-size: 0.88em;
+  font-weight: 600;
+}
+
+.pub-links a:hover {
+  background: #dbeafe;
+}
+
+.pub-section-title {
+  margin-top: 36px;
+  margin-bottom: 18px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+@media (max-width: 700px) {
+  .pub-card {
+    flex-direction: column;
+  }
+
+  .pub-img {
+    flex: none;
+  }
+
+  .pub-img img {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+
 {% if site.author.googlescholar %}
-  <div class="wordwrap">
-    You can also find my articles on <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.
+  <div class="wordwrap" style="margin-bottom:25px;">
+    You can also find my articles on 
+    <a href="{{ site.author.googlescholar }}">my Google Scholar profile</a>.
   </div>
 {% endif %}
 
-{% include base_path %}
-
 {% assign sorted_pubs = site.publications | sort: "order" %}
 
-{% if site.publication_category %}
-  {% for category in site.publication_category %}
-    {% assign title_shown = false %}
-    {% for post in sorted_pubs %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2>
-        <hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
+{% for category in site.publication_category %}
+  {% assign title_shown = false %}
+
   {% for post in sorted_pubs %}
-    {% include archive-single.html %}
+    {% if post.category != category[0] %}
+      {% continue %}
+    {% endif %}
+
+    {% unless title_shown %}
+      <h2 class="pub-section-title">{{ category[1].title }}</h2>
+      {% assign title_shown = true %}
+    {% endunless %}
+
+    <div class="pub-card">
+
+      {% if post.image %}
+      <div class="pub-img">
+        <img src="{{ post.image }}" alt="{{ post.title }}">
+      </div>
+      {% endif %}
+
+      <div class="pub-content">
+        <div class="pub-title">{{ post.title }}</div>
+
+        {% if post.venue %}
+        <div class="pub-venue">{{ post.venue }}</div>
+        {% endif %}
+
+        {% if post.citation %}
+        <div class="pub-authors">{{ post.citation }}</div>
+        {% endif %}
+
+        {% if post.abstract %}
+        <div class="pub-abstract">{{ post.abstract }}</div>
+        {% endif %}
+
+        <div class="pub-links">
+          {% if post.paperurl %}
+            <a href="{{ post.paperurl }}" target="_blank">📄 PDF</a>
+          {% endif %}
+          {% if post.slides %}
+            <a href="{{ post.slides }}" target="_blank">🎞 Slides</a>
+          {% endif %}
+          {% if post.code %}
+            <a href="{{ post.code }}" target="_blank">💻 Code</a>
+          {% endif %}
+          {% if post.doi %}
+            <a href="{{ post.doi }}" target="_blank">🔗 DOI</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
   {% endfor %}
-{% endif %}
+{% endfor %}
