@@ -144,6 +144,12 @@ author_profile: true
         {% if post.abstract %}
         <div class="pub-abstract">{{ post.abstract }}</div>
         {% endif %}
+        
+        {% if post.content != "" %}
+        <div class="pub-abstract" style="font-style: italic; color:#666;">
+          {{ post.content }}
+        </div>
+        {% endif %}
 
         <div class="pub-links">
           {% if post.paperurl %}
