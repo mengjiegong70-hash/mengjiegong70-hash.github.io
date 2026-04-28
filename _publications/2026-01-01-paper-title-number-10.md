@@ -8,4 +8,3 @@ venue: "Under review at International Journal of Geographical Information Scienc
 citation: Chen, P†., <strong>Gong, M†.</strong>, et al. DML-Geo: An Ensemble Double Machine Learning Framework for Estimating Spatially Heterogeneous Causal Effects.
 image: "/images/DML-Geo.png"
 ---
-[[Paper Overview]](https://academicpages.github.io/files/slides2.pdf)
