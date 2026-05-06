@@ -8,6 +8,6 @@ venue: 'International Journal of Geographical Information Science(Q1, IF=5.1)'
 slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
 image: "/images/CBA.png"
 paperurl: 'https://mengjiegong70-hash.github.io/files/[2025-9]The cost-balanced accessibility  CBA  model  a new framework for measuring urban accessibility with multi-objective considerations.pdf'
-citation: "Chen, P., <strong>Gong, M.</strong>, & Li, S. (2025). The cost-balanced accessibility (CBA) model: a new framework for measuring urban accessibility with multi-objective considerations. International Journal of Geographical Information Science, 1-24."
+citation: "Chen, P., <strong>Gong, M.</strong>, & Li, S. (2026). The cost-balanced accessibility (CBA) model: a new framework for measuring urban accessibility with multi-objective considerations. International Journal of Geographical Information Science, 40(5), 1293-1316."
 ---
 This work was conducted during my graduate studies. I contributed as the second author under the supervision of my advisor (first author).
