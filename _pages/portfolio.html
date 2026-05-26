@@ -7,8 +7,489 @@ author_profile: true
 
 {% include base_path %}
 
+<div class="portfolio-hero">
+  <h1>Portfolio</h1>
+  <p>
+    A collection of my research projects, academic outputs, technical explorations,
+    and interesting experiments in GIScience, remote sensing, spatial accessibility,
+    environmental health, and urban analytics.
+  </p>
+</div>
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
+<div class="portfolio-toolbar">
+  <input type="text" id="portfolioSearch" placeholder="Search projects, methods, keywords..." />
 
+  <div class="portfolio-filters">
+    <button class="filter-btn active" data-filter="all">All 全部</button>
+    <button class="filter-btn" data-filter="research">Research 研究</button>
+    <button class="filter-btn" data-filter="project">Projects 项目</button>
+    <button class="filter-btn" data-filter="tool">Tools 工具</button>
+    <button class="filter-btn" data-filter="fun">Fun 有趣探索</button>
+  </div>
+</div>
+
+<div class="portfolio-grid">
+
+  <article class="pf-card" data-category="research">
+    <div class="pf-tag">Research</div>
+    <h3>Spatiotemporal Accessibility to Elderly Care Services</h3>
+    <p>
+      Modeling elderly care service accessibility and resource optimization under
+      different socio-economic development pathways in the Guangdong-Hong Kong-Macao Greater Bay Area.
+    </p>
+    <div class="pf-keywords">
+      <span>Spatial Accessibility</span>
+      <span>2SFCA</span>
+      <span>Optimization</span>
+      <span>Aging Society</span>
+    </div>
+    <button class="pf-more">View details</button>
+
+    <div class="pf-detail" hidden>
+      <h2>Spatiotemporal Accessibility to Elderly Care Services</h2>
+      <p>
+        This research focuses on the spatial mismatch between elderly care service supply
+        and aging population demand. It explores how elderly care resources can be optimized
+        under different future development scenarios.
+      </p>
+      <ul>
+        <li><strong>Theme:</strong> Elderly care accessibility and resource allocation</li>
+        <li><strong>Methods:</strong> Spatial accessibility modeling, scenario simulation, optimization analysis</li>
+        <li><strong>Study area:</strong> Guangdong-Hong Kong-Macao Greater Bay Area</li>
+        <li><strong>Value:</strong> Supporting public service planning and aging-friendly urban development</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="pf-card" data-category="research">
+    <div class="pf-tag">Research</div>
+    <h3>Urban Eye-health Environmental Exposure Assessment</h3>
+    <p>
+      Integrating remote sensing, GIS, and street-view data to assess urban environmental
+      exposure related to eye-health risks.
+    </p>
+    <div class="pf-keywords">
+      <span>Environmental Health</span>
+      <span>Remote Sensing</span>
+      <span>GIS</span>
+      <span>Street View</span>
+    </div>
+    <button class="pf-more">View details</button>
+
+    <div class="pf-detail" hidden>
+      <h2>Urban Eye-health Environmental Exposure Assessment</h2>
+      <p>
+        This project investigates how urban environmental factors may influence eye-health risks.
+        It combines multi-source geospatial data, street-view images, and spatial analysis methods.
+      </p>
+      <ul>
+        <li><strong>Theme:</strong> Urban environment and eye-health exposure</li>
+        <li><strong>Methods:</strong> Remote sensing, GIS, street-view image analysis, exposure assessment</li>
+        <li><strong>Value:</strong> Supporting healthier urban environmental planning</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="pf-card" data-category="project">
+    <div class="pf-tag">Project</div>
+    <h3>Multi-scale Residential Unit Segmentation</h3>
+    <p>
+      Using urban big data to identify and segment residential units at multiple spatial scales.
+    </p>
+    <div class="pf-keywords">
+      <span>Urban Big Data</span>
+      <span>Residential Units</span>
+      <span>Spatial Segmentation</span>
+    </div>
+    <button class="pf-more">View details</button>
+
+    <div class="pf-detail" hidden>
+      <h2>Multi-scale Residential Unit Segmentation</h2>
+      <p>
+        This industry project focuses on the extraction and segmentation of residential units
+        using multi-source urban big data, supporting fine-scale urban governance and community analysis.
+      </p>
+      <ul>
+        <li><strong>Theme:</strong> Urban spatial structure and residential unit identification</li>
+        <li><strong>Methods:</strong> Urban big data processing, spatial clustering, GIS analysis</li>
+        <li><strong>Application:</strong> Urban governance, neighborhood analysis, community-scale planning</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="pf-card" data-category="project">
+    <div class="pf-tag">Project</div>
+    <h3>Story Map and Narrative Cartography</h3>
+    <p>
+      A national undergraduate innovation project on story map design and novel cartography
+      based on narrative visualization and metaphorical thinking.
+    </p>
+    <div class="pf-keywords">
+      <span>Story Map</span>
+      <span>Cartography</span>
+      <span>Narrative Visualization</span>
+    </div>
+    <button class="pf-more">View details</button>
+
+    <div class="pf-detail" hidden>
+      <h2>Story Map and Narrative Cartography</h2>
+      <p>
+        This project explores how narrative visualization and metaphorical thinking can be used
+        to design more expressive and engaging story maps.
+      </p>
+      <ul>
+        <li><strong>Program:</strong> National Undergraduate Innovation Program</li>
+        <li><strong>Role:</strong> Principal Investigator</li>
+        <li><strong>Result:</strong> Excellent Completion</li>
+        <li><strong>Theme:</strong> Story map design, narrative visualization, cartographic expression</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="pf-card" data-category="tool">
+    <div class="pf-tag">Tool</div>
+    <h3>Vessel Berthing Status Identification System</h3>
+    <p>
+      A software copyright project for assisting the identification of vessel berthing status.
+    </p>
+    <div class="pf-keywords">
+      <span>Software Copyright</span>
+      <span>Trajectory Mining</span>
+      <span>Mobility Analysis</span>
+    </div>
+    <button class="pf-more">View details</button>
+
+    <div class="pf-detail" hidden>
+      <h2>Vessel Berthing Status Identification System</h2>
+      <p>
+        This system supports the identification of vessel berthing status and reflects technical
+        exploration in trajectory mining and mobility behavior analysis.
+      </p>
+      <ul>
+        <li><strong>Type:</strong> Software Copyright 软件著作权</li>
+        <li><strong>Chinese title:</strong> 船舶在港状态识别辅助系统</li>
+        <li><strong>Registration No.:</strong> 2023SR1659886</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="pf-card" data-category="tool">
+    <div class="pf-tag">Tool</div>
+    <h3>Map-based Visual Narrative Design</h3>
+    <p>
+      A design patent related to map visualization, narrative expression, and visual storytelling.
+    </p>
+    <div class="pf-keywords">
+      <span>Design Patent</span>
+      <span>Map Visualization</span>
+      <span>Visual Narrative</span>
+    </div>
+    <button class="pf-more">View details</button>
+
+    <div class="pf-detail" hidden>
+      <h2>Map-based Visual Narrative Design</h2>
+      <p>
+        This design patent focuses on visual narrative expression through map-based design,
+        combining cartographic representation with storytelling-oriented visualization.
+      </p>
+      <ul>
+        <li><strong>Type:</strong> Design Patent 外观设计专利</li>
+        <li><strong>Chinese title:</strong> 地图可视化叙事</li>
+        <li><strong>Patent No.:</strong> ZL 2022 3 0594604.9</li>
+      </ul>
+    </div>
+  </article>
+
+  <article class="pf-card" data-category="fun">
+    <div class="pf-tag">Fun</div>
+    <h3>Interesting GIS and Data Visualization Experiments</h3>
+    <p>
+      Small experiments on geospatial visualization, public review data, social media data,
+      and urban perception analysis.
+    </p>
+    <div class="pf-keywords">
+      <span>GIS</span>
+      <span>Visualization</span>
+      <span>Social Media Data</span>
+      <span>Urban Perception</span>
+    </div>
+    <button class="pf-more">View details</button>
+
+    <div class="pf-detail" hidden>
+      <h2>Interesting GIS and Data Visualization Experiments</h2>
+      <p>
+        This section can be used to display smaller but interesting explorations, such as Weibo data,
+        Dianping review data, street-view perception, POI analysis, and interactive maps.
+      </p>
+      <ul>
+        <li><strong>Examples:</strong> Weibo data analysis, Dianping data mining, POI visualization</li>
+        <li><strong>Methods:</strong> Text mining, spatial visualization, urban analytics</li>
+        <li><strong>Purpose:</strong> Showing creativity, technical curiosity, and interdisciplinary interests</li>
+      </ul>
+    </div>
+  </article>
+
+</div>
+
+<p id="noResults" style="display:none;">No matching items found.</p>
+
+<div id="pfModal" class="pf-modal">
+  <div class="pf-modal-content">
+    <button class="pf-close">&times;</button>
+    <div id="pfModalBody"></div>
+  </div>
+</div>
+
+<style>
+.portfolio-hero {
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #f7f9fc, #eef3f8);
+  border: 1px solid #e4eaf1;
+}
+
+.portfolio-hero h1 {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  font-size: 2rem;
+}
+
+.portfolio-hero p {
+  max-width: 850px;
+  line-height: 1.7;
+  color: #4a5568;
+}
+
+.portfolio-toolbar {
+  margin: 1.5rem 0;
+}
+
+#portfolioSearch {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #d8dee6;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.filter-btn {
+  border: 1px solid #d8dee6;
+  background: #fff;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: #2f5d8c;
+  color: #fff;
+  border-color: #2f5d8c;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.pf-card {
+  position: relative;
+  padding: 1.3rem;
+  border: 1px solid #e5e9f0;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pf-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.08);
+}
+
+.pf-tag {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 999px;
+  background: #eef3f8;
+  color: #2f5d8c;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.pf-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  font-size: 1.1rem;
+}
+
+.pf-card p {
+  color: #4a5568;
+  line-height: 1.6;
+  font-size: 0.92rem;
+}
+
+.pf-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.9rem 0;
+}
+
+.pf-keywords span {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 8px;
+  background: #f6f8fa;
+  color: #555;
+}
+
+.pf-more {
+  margin-top: 0.6rem;
+  border: none;
+  background: #2f5d8c;
+  color: #fff;
+  padding: 0.55rem 0.85rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.pf-more:hover {
+  background: #24496f;
+}
+
+.pf-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  padding: 2rem;
+}
+
+.pf-modal-content {
+  position: relative;
+  max-width: 760px;
+  max-height: 85vh;
+  overflow-y: auto;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.18);
+}
+
+.pf-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  background: #f1f3f5;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+#pfModalBody h2 {
+  margin-top: 0;
+}
+
+#pfModalBody p,
+#pfModalBody li {
+  line-height: 1.7;
+}
+
+#noResults {
+  padding: 1rem;
+  color: #777;
+  text-align: center;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("portfolioSearch");
+  const buttons = document.querySelectorAll(".filter-btn");
+  const cards = document.querySelectorAll(".pf-card");
+  const noResults = document.getElementById("noResults");
+  const modal = document.getElementById("pfModal");
+  const modalBody = document.getElementById("pfModalBody");
+  const closeBtn = document.querySelector(".pf-close");
+
+  let currentFilter = "all";
+
+  function filterCards() {
+    const keyword = searchInput.value.toLowerCase().trim();
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const category = card.dataset.category;
+      const text = card.innerText.toLowerCase();
+
+      const matchCategory = currentFilter === "all" || category === currentFilter;
+      const matchKeyword = text.includes(keyword);
+
+      if (matchCategory && matchKeyword) {
+        card.style.display = "block";
+        visibleCount++;
+      } else {
+        card.style.display = "none";
+      }
+    });
+
+    noResults.style.display = visibleCount === 0 ? "block" : "none";
+  }
+
+  buttons.forEach(button => {
+    button.addEventListener("click", function () {
+      buttons.forEach(btn => btn.classList.remove("active"));
+      this.classList.add("active");
+      currentFilter = this.dataset.filter;
+      filterCards();
+    });
+  });
+
+  searchInput.addEventListener("input", filterCards);
+
+  document.querySelectorAll(".pf-more").forEach(button => {
+    button.addEventListener("click", function () {
+      const card = this.closest(".pf-card");
+      const detail = card.querySelector(".pf-detail").innerHTML;
+      modalBody.innerHTML = detail;
+      modal.style.display = "block";
+    });
+  });
+
+  closeBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+
+  modal.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      modal.style.display = "none";
+    }
+  });
+});
+</script>
