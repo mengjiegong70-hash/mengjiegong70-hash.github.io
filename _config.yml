@@ -85,10 +85,10 @@ author:
 publication_category:
   lead_authored:
     title: "Lead-authored Publications"
-  co_authored:
-    title: "Co-authored Publications"
   under_review:
     title: "Under Review"
+  co_authored:
+    title: "Co-authored Publications"
   in_preparation:
     title: "In Preparation"
 
