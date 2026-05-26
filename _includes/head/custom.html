@@ -14,4 +14,316 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
 
+<style>
+/* Dark-mode readability fixes for custom profile pages.
+   This is placed in head/custom.html so it loads after main.css and can override
+   page-level inline styles when the browser or template enters dark mode. */
+
+html[data-theme="dark"],
+body[data-theme="dark"],
+.dark-theme {
+  --custom-card-bg: #34383f;
+  --custom-card-bg-soft: #3d424b;
+  --custom-hero-bg-1: #2f3742;
+  --custom-hero-bg-2: #394554;
+  --custom-border: #66707d;
+  --custom-text: #f7f9fb;
+  --custom-muted: #dce3ea;
+  --custom-accent: #7ddff2;
+}
+
+html[data-theme="dark"] .about-hero,
+html[data-theme="dark"] .portfolio-hero,
+html[data-theme="dark"] div[style*="background:#f8f9fa"],
+html[data-theme="dark"] div[style*="background: #f8f9fa"],
+body[data-theme="dark"] .about-hero,
+body[data-theme="dark"] .portfolio-hero,
+body[data-theme="dark"] div[style*="background:#f8f9fa"],
+body[data-theme="dark"] div[style*="background: #f8f9fa"],
+.dark-theme .about-hero,
+.dark-theme .portfolio-hero,
+.dark-theme div[style*="background:#f8f9fa"],
+.dark-theme div[style*="background: #f8f9fa"] {
+  background: linear-gradient(135deg, var(--custom-hero-bg-1), var(--custom-hero-bg-2)) !important;
+  border-color: var(--custom-border) !important;
+  color: var(--custom-text) !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.32) !important;
+}
+
+html[data-theme="dark"] .identity-item,
+html[data-theme="dark"] .research-card,
+html[data-theme="dark"] .question-card,
+html[data-theme="dark"] .exp-card,
+html[data-theme="dark"] .pf-card,
+html[data-theme="dark"] .pf-modal-content,
+html[data-theme="dark"] .note-box,
+html[data-theme="dark"] div[style*="background:#ffffff"],
+html[data-theme="dark"] div[style*="background: #ffffff"],
+body[data-theme="dark"] .identity-item,
+body[data-theme="dark"] .research-card,
+body[data-theme="dark"] .question-card,
+body[data-theme="dark"] .exp-card,
+body[data-theme="dark"] .pf-card,
+body[data-theme="dark"] .pf-modal-content,
+body[data-theme="dark"] .note-box,
+body[data-theme="dark"] div[style*="background:#ffffff"],
+body[data-theme="dark"] div[style*="background: #ffffff"],
+.dark-theme .identity-item,
+.dark-theme .research-card,
+.dark-theme .question-card,
+.dark-theme .exp-card,
+.dark-theme .pf-card,
+.dark-theme .pf-modal-content,
+.dark-theme .note-box,
+.dark-theme div[style*="background:#ffffff"],
+.dark-theme div[style*="background: #ffffff"] {
+  background: var(--custom-card-bg) !important;
+  border-color: var(--custom-border) !important;
+  color: var(--custom-text) !important;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35) !important;
+}
+
+html[data-theme="dark"] .about-hero p,
+html[data-theme="dark"] .portfolio-hero p,
+html[data-theme="dark"] .section-intro,
+html[data-theme="dark"] .identity-item span,
+html[data-theme="dark"] .research-card p,
+html[data-theme="dark"] .question-card div,
+html[data-theme="dark"] .exp-meta,
+html[data-theme="dark"] .pf-card p,
+html[data-theme="dark"] .pf-modal-content p,
+html[data-theme="dark"] .pf-modal-content li,
+html[data-theme="dark"] .note-box,
+html[data-theme="dark"] p[style*="color:#333"],
+html[data-theme="dark"] p[style*="color: #333"],
+body[data-theme="dark"] .about-hero p,
+body[data-theme="dark"] .portfolio-hero p,
+body[data-theme="dark"] .section-intro,
+body[data-theme="dark"] .identity-item span,
+body[data-theme="dark"] .research-card p,
+body[data-theme="dark"] .question-card div,
+body[data-theme="dark"] .exp-meta,
+body[data-theme="dark"] .pf-card p,
+body[data-theme="dark"] .pf-modal-content p,
+body[data-theme="dark"] .pf-modal-content li,
+body[data-theme="dark"] .note-box,
+body[data-theme="dark"] p[style*="color:#333"],
+body[data-theme="dark"] p[style*="color: #333"],
+.dark-theme .about-hero p,
+.dark-theme .portfolio-hero p,
+.dark-theme .section-intro,
+.dark-theme .identity-item span,
+.dark-theme .research-card p,
+.dark-theme .question-card div,
+.dark-theme .exp-meta,
+.dark-theme .pf-card p,
+.dark-theme .pf-modal-content p,
+.dark-theme .pf-modal-content li,
+.dark-theme .note-box,
+.dark-theme p[style*="color:#333"],
+.dark-theme p[style*="color: #333"] {
+  color: var(--custom-muted) !important;
+}
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] strong,
+html[data-theme="dark"] .identity-item strong,
+html[data-theme="dark"] .question-card summary,
+html[data-theme="dark"] .pf-modal-content h2,
+body[data-theme="dark"] h1,
+body[data-theme="dark"] h2,
+body[data-theme="dark"] h3,
+body[data-theme="dark"] strong,
+body[data-theme="dark"] .identity-item strong,
+body[data-theme="dark"] .question-card summary,
+body[data-theme="dark"] .pf-modal-content h2,
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme strong,
+.dark-theme .identity-item strong,
+.dark-theme .question-card summary,
+.dark-theme .pf-modal-content h2 {
+  color: var(--custom-text) !important;
+}
+
+html[data-theme="dark"] .about-highlight,
+html[data-theme="dark"] .research-card h3,
+html[data-theme="dark"] .question-card summary,
+html[data-theme="dark"] .exp-card h3,
+html[data-theme="dark"] .pf-card h3,
+body[data-theme="dark"] .about-highlight,
+body[data-theme="dark"] .research-card h3,
+body[data-theme="dark"] .question-card summary,
+body[data-theme="dark"] .exp-card h3,
+body[data-theme="dark"] .pf-card h3,
+.dark-theme .about-highlight,
+.dark-theme .research-card h3,
+.dark-theme .question-card summary,
+.dark-theme .exp-card h3,
+.dark-theme .pf-card h3 {
+  color: var(--custom-accent) !important;
+}
+
+html[data-theme="dark"] .about-kicker,
+html[data-theme="dark"] .keyword-row span,
+html[data-theme="dark"] .exp-tag,
+html[data-theme="dark"] .pf-tag,
+html[data-theme="dark"] .pf-keywords span,
+body[data-theme="dark"] .about-kicker,
+body[data-theme="dark"] .keyword-row span,
+body[data-theme="dark"] .exp-tag,
+body[data-theme="dark"] .pf-tag,
+body[data-theme="dark"] .pf-keywords span,
+.dark-theme .about-kicker,
+.dark-theme .keyword-row span,
+.dark-theme .exp-tag,
+.dark-theme .pf-tag,
+.dark-theme .pf-keywords span {
+  background: rgba(125, 223, 242, 0.16) !important;
+  color: var(--custom-accent) !important;
+  border-color: rgba(125, 223, 242, 0.32) !important;
+}
+
+html[data-theme="dark"] .hero-actions a.secondary,
+html[data-theme="dark"] .filter-btn,
+html[data-theme="dark"] #portfolioSearch,
+html[data-theme="dark"] .pf-close,
+body[data-theme="dark"] .hero-actions a.secondary,
+body[data-theme="dark"] .filter-btn,
+body[data-theme="dark"] #portfolioSearch,
+body[data-theme="dark"] .pf-close,
+.dark-theme .hero-actions a.secondary,
+.dark-theme .filter-btn,
+.dark-theme #portfolioSearch,
+.dark-theme .pf-close {
+  background: var(--custom-card-bg-soft) !important;
+  color: var(--custom-text) !important;
+  border-color: var(--custom-border) !important;
+}
+
+html[data-theme="dark"] .filter-btn:hover,
+html[data-theme="dark"] .filter-btn.active,
+body[data-theme="dark"] .filter-btn:hover,
+body[data-theme="dark"] .filter-btn.active,
+.dark-theme .filter-btn:hover,
+.dark-theme .filter-btn.active {
+  background: #0ea1c5 !important;
+  color: #ffffff !important;
+  border-color: #0ea1c5 !important;
+}
+
+html[data-theme="dark"] input::placeholder,
+body[data-theme="dark"] input::placeholder,
+.dark-theme input::placeholder {
+  color: #cdd6df !important;
+}
+
+/* Browser / OS dark mode fallback. This is the important part for devices that
+   switch the page to night mode without adding html[data-theme="dark"]. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --custom-card-bg: #34383f;
+    --custom-card-bg-soft: #3d424b;
+    --custom-hero-bg-1: #2f3742;
+    --custom-hero-bg-2: #394554;
+    --custom-border: #66707d;
+    --custom-text: #f7f9fb;
+    --custom-muted: #dce3ea;
+    --custom-accent: #7ddff2;
+  }
+
+  .about-hero,
+  .portfolio-hero,
+  div[style*="background:#f8f9fa"],
+  div[style*="background: #f8f9fa"] {
+    background: linear-gradient(135deg, var(--custom-hero-bg-1), var(--custom-hero-bg-2)) !important;
+    border-color: var(--custom-border) !important;
+    color: var(--custom-text) !important;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.32) !important;
+  }
+
+  .identity-item,
+  .research-card,
+  .question-card,
+  .exp-card,
+  .pf-card,
+  .pf-modal-content,
+  .note-box,
+  div[style*="background:#ffffff"],
+  div[style*="background: #ffffff"] {
+    background: var(--custom-card-bg) !important;
+    border-color: var(--custom-border) !important;
+    color: var(--custom-text) !important;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35) !important;
+  }
+
+  .about-hero p,
+  .portfolio-hero p,
+  .section-intro,
+  .identity-item span,
+  .research-card p,
+  .question-card div,
+  .exp-meta,
+  .pf-card p,
+  .pf-modal-content p,
+  .pf-modal-content li,
+  .note-box,
+  p[style*="color:#333"],
+  p[style*="color: #333"] {
+    color: var(--custom-muted) !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  strong,
+  .identity-item strong,
+  .question-card summary,
+  .pf-modal-content h2 {
+    color: var(--custom-text) !important;
+  }
+
+  .about-highlight,
+  .research-card h3,
+  .question-card summary,
+  .exp-card h3,
+  .pf-card h3 {
+    color: var(--custom-accent) !important;
+  }
+
+  .about-kicker,
+  .keyword-row span,
+  .exp-tag,
+  .pf-tag,
+  .pf-keywords span {
+    background: rgba(125, 223, 242, 0.16) !important;
+    color: var(--custom-accent) !important;
+    border-color: rgba(125, 223, 242, 0.32) !important;
+  }
+
+  .hero-actions a.secondary,
+  .filter-btn,
+  #portfolioSearch,
+  .pf-close {
+    background: var(--custom-card-bg-soft) !important;
+    color: var(--custom-text) !important;
+    border-color: var(--custom-border) !important;
+  }
+
+  .filter-btn:hover,
+  .filter-btn.active {
+    background: #0ea1c5 !important;
+    color: #ffffff !important;
+    border-color: #0ea1c5 !important;
+  }
+
+  input::placeholder {
+    color: #cdd6df !important;
+  }
+}
+</style>
+
 <!-- end custom head snippets -->
