@@ -4,7 +4,7 @@ collection: publications
 category: lead_authored
 date: 2026-1-8
 venue: 'Journal of Cleaner Production(Q1, IF=10.0)'
-order: 4
+order: 5
 slidesurl: 'https://academicpages.github.io/files/slides2.pdf'
 image: "/images/JCP.png"
 paperurl: 'https://mengjiegong70-hash.github.io/files/[2026-1]Carbon emission reduction of bike-sharing around the COVID-19 pandemicbased on fine-grained recognition of riding activities.pdf'
