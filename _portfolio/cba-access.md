@@ -154,8 +154,7 @@ author_profile: true
 
 CBA-Access is developed based on the following study:
 
-> Chen, P., Gong, M., & Li, S. (2025). The cost-balanced accessibility (CBA) model: a new framework for measuring urban accessibility with multi-objective considerations. *International Journal of Geographical Information Science*, 1–24.
-
+> Chen, P., Gong, M., & Li, S. (2026). The cost-balanced accessibility (CBA) model: a new framework for measuring urban accessibility with multi-objective considerations. *International Journal of Geographical Information Science*, 40(5), 1293-1316.
 The package represents an effort to transform a theoretical accessibility model into a reusable computational tool. My long-term goal is to gradually develop it into a specialized Python toolkit for spatial accessibility analysis.
 
 <div class="highlight-box">
