@@ -203,81 +203,6 @@ redirect_from:
   border: 1px solid #e6edf5;
 }
 
-.compass {
-  margin: 1.4rem 0 2.2rem 0;
-  padding: 1.25rem;
-  border: 1px solid var(--about-border);
-  border-radius: 22px;
-  background: linear-gradient(180deg, #ffffff, #f8fafc);
-  box-shadow: 0 12px 32px rgba(36, 73, 111, 0.06);
-}
-
-.compass input {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.compass-tabs {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 0.7rem;
-  margin-bottom: 1rem;
-}
-
-.compass-tabs label {
-  cursor: pointer;
-  padding: 0.82rem 0.9rem;
-  border-radius: 14px;
-  border: 1px solid var(--about-border);
-  background: #ffffff;
-  color: var(--about-muted);
-  font-size: 0.9rem;
-  font-weight: 700;
-  text-align: center;
-  transition: all 0.18s ease;
-}
-
-#compass-access:checked ~ .compass-tabs label[for="compass-access"],
-#compass-causal:checked ~ .compass-tabs label[for="compass-causal"],
-#compass-exposure:checked ~ .compass-tabs label[for="compass-exposure"],
-#compass-visual:checked ~ .compass-tabs label[for="compass-visual"] {
-  color: #ffffff;
-  background: var(--about-blue);
-  border-color: var(--about-blue);
-  box-shadow: 0 8px 18px rgba(47, 93, 140, 0.18);
-}
-
-.compass-panel {
-  display: none;
-  padding: 1.15rem;
-  border-radius: 18px;
-  background: #ffffff;
-  border: 1px solid var(--about-border);
-}
-
-#compass-access:checked ~ .compass-content #panel-access,
-#compass-causal:checked ~ .compass-content #panel-causal,
-#compass-exposure:checked ~ .compass-content #panel-exposure,
-#compass-visual:checked ~ .compass-content #panel-visual {
-  display: block;
-}
-
-.compass-panel h3 {
-  margin: 0 0 0.5rem 0;
-  color: var(--about-blue-dark);
-}
-
-.compass-panel p {
-  margin: 0.45rem 0;
-  line-height: 1.65;
-  color: #4a5568;
-}
-
-.compass-panel strong {
-  color: var(--about-ink);
-}
-
 .question-list {
   display: grid;
   gap: 0.85rem;
@@ -343,11 +268,6 @@ redirect_from:
 @media (max-width: 600px) {
   .about-hero {
     padding: 1.55rem;
-  }
-
-  .compass,
-  .compass-panel {
-    padding: 1rem;
   }
 }
 </style>
@@ -436,56 +356,6 @@ redirect_from:
   <span>Urban Big Data</span>
   <span>Human Mobility</span>
   <span>Spatial Optimization</span>
-</div>
-
-## Research Compass
-
-<p class="section-intro">
-  This compass summarizes the main directions of my GIS-oriented research, connecting questions, methods, and urban applications.
-</p>
-
-<div class="compass">
-  <input type="radio" name="research-compass" id="compass-access" checked>
-  <input type="radio" name="research-compass" id="compass-causal">
-  <input type="radio" name="research-compass" id="compass-exposure">
-  <input type="radio" name="research-compass" id="compass-visual">
-
-  <div class="compass-tabs">
-    <label for="compass-access">Accessibility</label>
-    <label for="compass-causal">Spatial Causality</label>
-    <label for="compass-exposure">Exposure</label>
-    <label for="compass-visual">Visualization</label>
-  </div>
-
-  <div class="compass-content">
-    <div class="compass-panel" id="panel-access">
-      <h3>Spatial Accessibility & Service Equity</h3>
-      <p><strong>Core idea:</strong> Measuring whether people can reach essential urban services under realistic spatial and temporal conditions.</p>
-      <p><strong>Methods:</strong> 2SFCA-family models, gravity-based accessibility, spatial optimization, and scenario simulation.</p>
-      <p><strong>Applications:</strong> Healthcare facilities, elderly care services, grocery stores, green spaces, and emergency accessibility.</p>
-    </div>
-
-    <div class="compass-panel" id="panel-causal">
-      <h3>Causal Inference for Spatial and Spatiotemporal Data</h3>
-      <p><strong>Core idea:</strong> Understanding how urban and environmental factors influence outcomes when data are spatially dependent.</p>
-      <p><strong>Methods:</strong> Spatially aware causal modeling, heterogeneity analysis, machine learning, and policy evaluation.</p>
-      <p><strong>Applications:</strong> Urban planning interventions, environmental assessment, public health, and resource allocation.</p>
-    </div>
-
-    <div class="compass-panel" id="panel-exposure">
-      <h3>Dynamic Environmental Health Exposure</h3>
-      <p><strong>Core idea:</strong> Capturing environmental exposure not only at residential locations, but also along daily mobility paths.</p>
-      <p><strong>Methods:</strong> Trajectory-based exposure assessment, remote sensing, street-view data, and urban big data mining.</p>
-      <p><strong>Applications:</strong> Thermal exposure, noise exposure, sentiment exposure, and street-level built environment exposure.</p>
-    </div>
-
-    <div class="compass-panel" id="panel-visual">
-      <h3>Geospatial Visualization & Urban Storytelling</h3>
-      <p><strong>Core idea:</strong> Translating complex spatial patterns into clear visual evidence for research communication and planning discussion.</p>
-      <p><strong>Methods:</strong> GIS visualization, story maps, dashboards, spatial data storytelling, and visual analytics.</p>
-      <p><strong>Applications:</strong> Communicating accessibility gaps, exposure inequalities, urban perception, and planning scenarios.</p>
-    </div>
-  </div>
 </div>
 
 ## Research Questions
