@@ -13,13 +13,8 @@ redirect_from:
   --about-blue-dark: #24496f;
   --about-ink: #243447;
   --about-muted: #5b6778;
-  --about-soft: #f6f8fb;
   --about-border: #e3e9f2;
   --about-card: #ffffff;
-}
-
-.about-wrap {
-  color: var(--about-ink);
 }
 
 .about-hero {
@@ -82,16 +77,14 @@ redirect_from:
   color: var(--about-blue);
 }
 
-.hero-actions,
-.link-buttons {
+.hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.7rem;
   margin-top: 1.2rem;
 }
 
-.hero-actions a,
-.link-buttons a {
+.hero-actions a {
   display: inline-block;
   padding: 0.68rem 0.95rem;
   border-radius: 12px;
@@ -104,23 +97,20 @@ redirect_from:
   transition: transform 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
 }
 
-.hero-actions a.secondary,
-.link-buttons a.secondary {
+.hero-actions a.secondary {
   color: var(--about-blue-dark) !important;
   background: #ffffff;
   border: 1px solid var(--about-border);
   box-shadow: none;
 }
 
-.hero-actions a:hover,
-.link-buttons a:hover {
+.hero-actions a:hover {
   transform: translateY(-2px);
   background: var(--about-blue-dark);
   text-decoration: none;
 }
 
-.hero-actions a.secondary:hover,
-.link-buttons a.secondary:hover {
+.hero-actions a.secondary:hover {
   background: #f1f5f9;
 }
 
@@ -160,16 +150,14 @@ redirect_from:
   line-height: 1.72;
 }
 
-.research-grid,
-.toolbox-grid {
+.research-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1rem;
   margin: 1.4rem 0 2rem 0;
 }
 
-.research-card,
-.tool-card {
+.research-card {
   position: relative;
   padding: 1.25rem;
   border-radius: 18px;
@@ -179,23 +167,20 @@ redirect_from:
   transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 
-.research-card:hover,
-.tool-card:hover {
+.research-card:hover {
   transform: translateY(-4px);
   border-color: rgba(47, 93, 140, 0.28);
   box-shadow: 0 16px 36px rgba(36, 73, 111, 0.1);
 }
 
-.research-card h3,
-.tool-card h3 {
+.research-card h3 {
   margin-top: 0;
   margin-bottom: 0.65rem;
   color: var(--about-blue);
   font-size: 1.05rem;
 }
 
-.research-card p,
-.tool-card p {
+.research-card p {
   margin-bottom: 0;
   font-size: 0.92rem;
   line-height: 1.68;
@@ -293,49 +278,6 @@ redirect_from:
   color: var(--about-ink);
 }
 
-.pipeline {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 0.85rem;
-  margin: 1.4rem 0 2.2rem 0;
-}
-
-.pipeline-step {
-  position: relative;
-  padding: 1rem;
-  min-height: 120px;
-  border-radius: 18px;
-  background: #ffffff;
-  border: 1px solid var(--about-border);
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.04);
-}
-
-.pipeline-step span {
-  display: inline-flex;
-  width: 32px;
-  height: 32px;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0.7rem;
-  border-radius: 50%;
-  background: rgba(47, 93, 140, 0.1);
-  color: var(--about-blue);
-  font-weight: 800;
-}
-
-.pipeline-step h3 {
-  margin: 0 0 0.45rem 0;
-  color: var(--about-ink);
-  font-size: 0.98rem;
-}
-
-.pipeline-step p {
-  margin: 0;
-  color: var(--about-muted);
-  font-size: 0.86rem;
-  line-height: 1.55;
-}
-
 .question-list {
   display: grid;
   gap: 0.85rem;
@@ -410,15 +352,14 @@ redirect_from:
 }
 </style>
 
-<div class="about-wrap">
-
 <div class="about-hero">
-  <div class="about-kicker">GIScience · Urban Analytics · Environmental Health</div>
+  <div class="about-kicker">Surveying & Mapping Engineering · GIScience · Urban Analytics</div>
   <h1>Hello, I am Mengjie Gong.</h1>
 
   <p>
-    I am a master’s student in <span class="about-highlight">Geographic Information Systems (GIS)</span>
-    at <span class="about-highlight">Sun Yat-sen University</span>. My research lies at the intersection of
+    I am a master’s student in <span class="about-highlight">Surveying and Mapping Engineering</span>
+    at <span class="about-highlight">Sun Yat-sen University</span>, with research focused on
+    <span class="about-highlight">Geographic Information Systems (GIS)</span>. My work lies at the intersection of
     spatial data science, urban analytics, and environmental health.
   </p>
 
@@ -439,11 +380,11 @@ redirect_from:
 <div class="identity-dashboard">
   <div class="identity-item">
     <span>Current Role</span>
-    <strong>Master’s Student in GIS</strong>
+    <strong>Master’s Student in Surveying and Mapping Engineering</strong>
   </div>
   <div class="identity-item">
-    <span>Research Theme</span>
-    <strong>Spatial Data Science for Equitable Cities</strong>
+    <span>Research Focus</span>
+    <strong>GIScience and Spatial Data Science</strong>
   </div>
   <div class="identity-item">
     <span>Methodological Focus</span>
@@ -500,8 +441,7 @@ redirect_from:
 ## Research Compass
 
 <p class="section-intro">
-  My work can be understood through four connected directions. Each direction links a research question,
-  a methodological strategy, and a practical urban application.
+  This compass summarizes the main directions of my GIS-oriented research, connecting questions, methods, and urban applications.
 </p>
 
 <div class="compass">
@@ -520,99 +460,39 @@ redirect_from:
   <div class="compass-content">
     <div class="compass-panel" id="panel-access">
       <h3>Spatial Accessibility & Service Equity</h3>
-      <p><strong>Question:</strong> How well do urban services match population demand across space and time?</p>
-      <p><strong>Methods:</strong> 2SFCA-family models, gravity-based accessibility, spatial optimization, scenario simulation.</p>
+      <p><strong>Core idea:</strong> Measuring whether people can reach essential urban services under realistic spatial and temporal conditions.</p>
+      <p><strong>Methods:</strong> 2SFCA-family models, gravity-based accessibility, spatial optimization, and scenario simulation.</p>
       <p><strong>Applications:</strong> Healthcare facilities, elderly care services, grocery stores, green spaces, and emergency accessibility.</p>
     </div>
 
     <div class="compass-panel" id="panel-causal">
       <h3>Causal Inference for Spatial and Spatiotemporal Data</h3>
-      <p><strong>Question:</strong> How can causal inference be adapted when observations are spatially dependent?</p>
-      <p><strong>Methods:</strong> Spatially aware causal modeling, heterogeneity analysis, machine learning, policy evaluation.</p>
+      <p><strong>Core idea:</strong> Understanding how urban and environmental factors influence outcomes when data are spatially dependent.</p>
+      <p><strong>Methods:</strong> Spatially aware causal modeling, heterogeneity analysis, machine learning, and policy evaluation.</p>
       <p><strong>Applications:</strong> Urban planning interventions, environmental assessment, public health, and resource allocation.</p>
     </div>
 
     <div class="compass-panel" id="panel-exposure">
       <h3>Dynamic Environmental Health Exposure</h3>
-      <p><strong>Question:</strong> How do mobility patterns shape people’s exposure to environmental and social conditions?</p>
-      <p><strong>Methods:</strong> Trajectory-based exposure assessment, remote sensing, street-view data, social media and review data mining.</p>
+      <p><strong>Core idea:</strong> Capturing environmental exposure not only at residential locations, but also along daily mobility paths.</p>
+      <p><strong>Methods:</strong> Trajectory-based exposure assessment, remote sensing, street-view data, and urban big data mining.</p>
       <p><strong>Applications:</strong> Thermal exposure, noise exposure, sentiment exposure, and street-level built environment exposure.</p>
     </div>
 
     <div class="compass-panel" id="panel-visual">
       <h3>Geospatial Visualization & Urban Storytelling</h3>
-      <p><strong>Question:</strong> How can complex spatial patterns be communicated clearly to researchers, planners, and the public?</p>
+      <p><strong>Core idea:</strong> Translating complex spatial patterns into clear visual evidence for research communication and planning discussion.</p>
       <p><strong>Methods:</strong> GIS visualization, story maps, dashboards, spatial data storytelling, and visual analytics.</p>
       <p><strong>Applications:</strong> Communicating accessibility gaps, exposure inequalities, urban perception, and planning scenarios.</p>
     </div>
   </div>
 </div>
 
-## Method Toolbox
+## Research Questions
 
 <p class="section-intro">
-  I use a mixed methodological toolkit that connects spatial theory, computational modeling, and urban applications.
+  My current work focuses on three connected questions in GIScience, urban analytics, and environmental health.
 </p>
-
-<div class="toolbox-grid">
-  <div class="tool-card">
-    <h3>GIS & Spatial Analysis</h3>
-    <p>Measuring spatial patterns, spatial mismatch, accessibility, and neighborhood-level inequalities.</p>
-  </div>
-  <div class="tool-card">
-    <h3>Remote Sensing</h3>
-    <p>Extracting environmental and urban surface information from satellite and earth observation data.</p>
-  </div>
-  <div class="tool-card">
-    <h3>Urban Big Data Mining</h3>
-    <p>Using mobility traces, social media, online reviews, and street-level data to understand urban dynamics.</p>
-  </div>
-  <div class="tool-card">
-    <h3>Causal Inference</h3>
-    <p>Estimating spatially heterogeneous effects and supporting more evidence-based policy evaluation.</p>
-  </div>
-  <div class="tool-card">
-    <h3>Spatial Optimization</h3>
-    <p>Designing facility allocation and service improvement scenarios under equity and efficiency objectives.</p>
-  </div>
-  <div class="tool-card">
-    <h3>Geovisual Analytics</h3>
-    <p>Transforming complex spatial results into maps, dashboards, figures, and communicable research stories.</p>
-  </div>
-</div>
-
-## Research Pipeline
-
-<p class="section-intro">
-  A common logic across my projects is to move from urban data to spatial diagnosis, then from diagnosis to planning insight.
-</p>
-
-<div class="pipeline">
-  <div class="pipeline-step">
-    <span>1</span>
-    <h3>Urban Data</h3>
-    <p>Collect population, mobility, facility, remote sensing, social media, and environmental data.</p>
-  </div>
-  <div class="pipeline-step">
-    <span>2</span>
-    <h3>Spatial Modeling</h3>
-    <p>Model accessibility, exposure, spatial dependence, and service-demand relationships.</p>
-  </div>
-  <div class="pipeline-step">
-    <span>3</span>
-    <h3>Evaluation</h3>
-    <p>Assess equity, efficiency, heterogeneity, causal effects, and uncertainty across places.</p>
-  </div>
-  <div class="pipeline-step">
-    <span>4</span>
-    <h3>Planning Insight</h3>
-    <p>Translate model results into scenario comparison, policy implications, and visual communication.</p>
-  </div>
-</div>
-
-## Current Research
-
-My current work explores how spatial data, remote sensing, urban big data, and computational modeling can be used to understand urban environments and support evidence-based planning.
 
 <div class="question-list">
   <details class="question-card" open>
@@ -620,14 +500,6 @@ My current work explores how spatial data, remote sensing, urban big data, and c
     <div>
       <p><strong>Why it matters:</strong> Static accessibility measures may overlook temporal population dynamics, service availability, and changing travel conditions.</p>
       <p><strong>My approach:</strong> Dynamic population data, 2SFCA-family models, gravity-based modeling, and scenario simulation.</p>
-    </div>
-  </details>
-
-  <details class="question-card">
-    <summary>How do urban resources match population demand?</summary>
-    <div>
-      <p><strong>Why it matters:</strong> Healthcare facilities, elderly care services, grocery stores, and green spaces are often unevenly distributed.</p>
-      <p><strong>My approach:</strong> Spatial mismatch analysis, accessibility indicators, demand-supply modeling, and optimization-based comparison.</p>
     </div>
   </details>
 
@@ -663,16 +535,4 @@ I have served as a reviewer for several international journals, including:
 
 <div class="note-box">
   Beyond formal research projects, I am also interested in geospatial visualization, story maps, urban perception analysis, social media data mining, and public review data analysis. I enjoy using GIS and data visualization to transform complex urban phenomena into more intuitive and communicable forms.
-</div>
-
-## More About My Work
-
-You can find more details about my research projects, technical explorations, publications, and selected works through the following pages:
-
-<div class="link-buttons">
-  <a href="/research-projects/">Research & Projects</a>
-  <a class="secondary" href="/publications/">Publications</a>
-  <a class="secondary" href="/cv/">CV</a>
-</div>
-
 </div>
