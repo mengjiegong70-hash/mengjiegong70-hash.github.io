@@ -297,25 +297,6 @@ redirect_from:
   </div>
 </div>
 
-<div class="identity-dashboard">
-  <div class="identity-item">
-    <span>Current Role</span>
-    <strong>Master’s Student in Surveying and Mapping Engineering</strong>
-  </div>
-  <div class="identity-item">
-    <span>Research Focus</span>
-    <strong>GIScience and Spatial Data Science</strong>
-  </div>
-  <div class="identity-item">
-    <span>Methodological Focus</span>
-    <strong>GIS · Remote Sensing · Causal Inference</strong>
-  </div>
-  <div class="identity-item">
-    <span>Application Areas</span>
-    <strong>Healthcare · Elderly Care · Exposure · Urban Resources</strong>
-  </div>
-</div>
-
 ## Research Interests
 
 <div class="research-grid">
