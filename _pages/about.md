@@ -44,7 +44,7 @@ redirect_from:
   border-radius: 16px;
   background: #ffffff;
   border: 1px solid #e5e9f0;
-  box-shadow: 0 8px 22px rgba(0,0,0,0.04);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.04);
 }
 
 .research-card h3 {
