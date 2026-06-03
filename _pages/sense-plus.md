@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Sense+ Urban Environmental Health Map"
+title: "Sense+ 城市环境健康地图 / Urban Environmental Health Map"
 permalink: /research-projects/sense-plus/
 author_profile: true
 ---
@@ -17,9 +17,17 @@ author_profile: true
 
 .sense-hero h1 {
   margin-top: 0;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.35rem;
   font-size: 2rem;
   letter-spacing: -0.03em;
+}
+
+.sense-hero h2 {
+  margin-top: 0;
+  margin-bottom: 0.9rem;
+  font-size: 1.18rem;
+  font-weight: 600;
+  color: #2f5d8c;
 }
 
 .sense-hero p {
@@ -131,6 +139,7 @@ author_profile: true
   }
 
   .sense-card h3,
+  .sense-hero h2,
   .sense-kicker {
     color: #7ddff2;
   }
@@ -147,6 +156,7 @@ author_profile: true
 <div class="sense-hero">
   <div class="sense-kicker">Remote Sensing · Environmental Health · Urban GIS</div>
   <h1>Sense+ 城市环境健康地图</h1>
+  <h2>Sense+ Urban Environmental Health Map</h2>
   <p>
     <strong>Sense+</strong> is a remote-sensing-driven urban environmental health mapping project. It integrates
     satellite remote sensing, street-level environmental indicators, air pollution monitoring, AI interpretation,
@@ -167,18 +177,18 @@ author_profile: true
   <img class="sense-cover" src="/images/环境地图.jpg" alt="Sense+ urban environmental health map preview">
 
   <video class="sense-video" controls preload="metadata" poster="/images/环境地图.jpg">
-    <source src="/video.mp4" type="video/mp4">
+    <source src="/images/video.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
 
-## Project Overview
+## Project Overview / 项目概述
 
 Sense+ aims to build a street-level urban environmental health map by combining multi-source remote sensing data, street-view indicators, real-time air pollution information, and AI-based environmental interpretation. The project focuses on how urban environmental factors such as street enclosure, green visibility, sky view, visual distance, and air quality may influence residents’ physical and mental well-being.
 
 Rather than treating remote sensing as a purely technical tool, this project explores how remote sensing can become a public-facing health service: a map that helps users understand nearby environmental risks, identify healthier streets, and choose more comfortable routes for commuting, walking, recreation, and community life.
 
-## What Problem Does It Address?
+## What Problem Does It Address? / 解决什么问题？
 
 <div class="sense-grid">
   <div class="sense-card">
@@ -195,7 +205,7 @@ Rather than treating remote sensing as a purely technical tool, this project exp
   </div>
 </div>
 
-## Technical Framework
+## Technical Framework / 技术框架
 
 The project constructs an <strong>Urban Environment Health Index (UEHI)</strong> by integrating street-level spatial environment indicators and grid-level air pollution indicators. The framework includes:
 
@@ -206,7 +216,7 @@ The project constructs an <strong>Urban Environment Health Index (UEHI)</strong>
   <li><strong>Application output:</strong> health score mapping, environmental risk alerts, and health-oriented route recommendation.</li>
 </ul>
 
-## App Design
+## App Design / 应用设计
 
 The Sense+ prototype is designed as a mobile health-map service. Its current and planned functions include:
 
@@ -229,7 +239,7 @@ The Sense+ prototype is designed as a mobile health-map service. Its current and
   </div>
 </div>
 
-## Innovation
+## Innovation / 创新点
 
 The main innovation of Sense+ lies in linking <strong>remote sensing, GIS, AI, and environmental health</strong> into a public-facing urban application. It builds a bridge from environmental data acquisition to health-oriented urban decision support, forming a practical workflow from <em>remote sensing indicators → environmental health index → map visualization → daily health guidance</em>.
 
