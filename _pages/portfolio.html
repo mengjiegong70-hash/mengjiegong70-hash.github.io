@@ -8,7 +8,7 @@ author_profile: true
 {% include base_path %}
 
 <div class="portfolio-hero">
-  <h1>Portfolio</h1>
+  <h1>Research & Projects</h1>
   <p>
     A collection of my research projects, academic outputs, technical explorations,
     and interesting experiments in GIScience, remote sensing, spatial accessibility,
@@ -30,6 +30,24 @@ author_profile: true
 
 <div class="portfolio-grid">
 
+  <article class="pf-card pf-featured" data-category="project">
+    <img class="pf-cover" src="/images/环境地图.jpg" alt="Sense+ urban environmental health map preview">
+    <div class="pf-tag">Project</div>
+    <h3>Sense+ 城市环境健康地图</h3>
+    <p>
+      A remote-sensing-driven urban environmental health map integrating GIS, AI interpretation,
+      street-level indicators, air pollution monitoring, and health-oriented route recommendation.
+    </p>
+    <div class="pf-keywords">
+      <span>Remote Sensing</span>
+      <span>GIS</span>
+      <span>Environmental Health</span>
+      <span>UEHI</span>
+      <span>Healthy Route</span>
+    </div>
+    <a class="pf-more pf-link" href="/research-projects/sense-plus/">Explore project</a>
+  </article>
+
   <article class="pf-card" data-category="research">
     <div class="pf-tag">Research</div>
     <h3>Spatiotemporal Accessibility to Elderly Care Services</h3>
@@ -44,7 +62,6 @@ author_profile: true
       <span>Aging Society</span>
     </div>
     <button class="pf-more">View details</button>
-
     <div class="pf-detail" hidden>
       <h2>Spatiotemporal Accessibility to Elderly Care Services</h2>
       <p>
@@ -75,7 +92,6 @@ author_profile: true
       <span>Street View</span>
     </div>
     <button class="pf-more">View details</button>
-
     <div class="pf-detail" hidden>
       <h2>Urban Eye-health Environmental Exposure Assessment</h2>
       <p>
@@ -102,7 +118,6 @@ author_profile: true
       <span>Spatial Segmentation</span>
     </div>
     <button class="pf-more">View details</button>
-
     <div class="pf-detail" hidden>
       <h2>Multi-scale Residential Unit Segmentation</h2>
       <p>
@@ -130,7 +145,6 @@ author_profile: true
       <span>Narrative Visualization</span>
     </div>
     <button class="pf-more">View details</button>
-
     <div class="pf-detail" hidden>
       <h2>Story Map and Narrative Cartography</h2>
       <p>
@@ -145,7 +159,7 @@ author_profile: true
       </ul>
     </div>
   </article>
-  
+
   <article class="pf-card" data-category="tool">
     <div class="pf-tag">Tool</div>
     <h3>CBA-Access: A Python Toolkit for Cost-Balanced Accessibility Modeling</h3>
@@ -160,9 +174,9 @@ author_profile: true
       <span>GIScience</span>
       <span>Open Tool</span>
     </div>
-    <a class="pf-more" href="/research-projects/cba-access/">Explore tool</a>
+    <a class="pf-more pf-link" href="/research-projects/cba-access/">Explore tool</a>
   </article>
-  
+
   <article class="pf-card" data-category="tool">
     <div class="pf-tag">Tool</div>
     <h3>Vessel Berthing Status Identification System</h3>
@@ -175,7 +189,6 @@ author_profile: true
       <span>Mobility Analysis</span>
     </div>
     <button class="pf-more">View details</button>
-
     <div class="pf-detail" hidden>
       <h2>Vessel Berthing Status Identification System</h2>
       <p>
@@ -202,7 +215,6 @@ author_profile: true
       <span>Visual Narrative</span>
     </div>
     <button class="pf-more">View details</button>
-
     <div class="pf-detail" hidden>
       <h2>Map-based Visual Narrative Design</h2>
       <p>
@@ -231,7 +243,6 @@ author_profile: true
       <span>Urban Perception</span>
     </div>
     <button class="pf-more">View details</button>
-
     <div class="pf-detail" hidden>
       <h2>Interesting GIS and Data Visualization Experiments</h2>
       <p>
@@ -336,6 +347,19 @@ author_profile: true
   box-shadow: 0 14px 32px rgba(0, 0, 0, 0.08);
 }
 
+.pf-featured {
+  border-color: rgba(47, 93, 140, 0.25);
+}
+
+.pf-cover {
+  width: 100%;
+  height: 165px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 1rem;
+  border: 1px solid #e5e9f0;
+}
+
 .pf-tag {
   display: inline-block;
   margin-bottom: 0.8rem;
@@ -375,18 +399,21 @@ author_profile: true
 }
 
 .pf-more {
+  display: inline-block;
   margin-top: 0.6rem;
   border: none;
   background: #2f5d8c;
-  color: #fff;
+  color: #fff !important;
   padding: 0.55rem 0.85rem;
   border-radius: 10px;
   cursor: pointer;
   font-size: 0.85rem;
+  text-decoration: none;
 }
 
 .pf-more:hover {
   background: #24496f;
+  text-decoration: none;
 }
 
 .pf-modal {
@@ -484,11 +511,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   searchInput.addEventListener("input", filterCards);
 
-  document.querySelectorAll(".pf-more").forEach(button => {
+  document.querySelectorAll("button.pf-more").forEach(button => {
     button.addEventListener("click", function () {
       const card = this.closest(".pf-card");
-      const detail = card.querySelector(".pf-detail").innerHTML;
-      modalBody.innerHTML = detail;
+      const detail = card.querySelector(".pf-detail");
+      if (!detail) return;
+      modalBody.innerHTML = detail.innerHTML;
       modal.style.display = "block";
     });
   });
